@@ -1,0 +1,14 @@
+spring:
+  cache:
+    redis:
+      cache-null-values: false
+      use-key-prefix: false
+
+---
+spring:
+  profiles:
+    active: local
+  redis:
+    host: localhost
+    port: 6379
+    minutesCache: 5
